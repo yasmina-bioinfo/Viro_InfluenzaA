@@ -1,0 +1,23 @@
+project:
+  name: "Viro_InfluenzaA"
+  threads: 8
+
+paths:
+  samples_csv: "data/metadata/samples.csv"
+  fastq_dir: "data/fastq"
+  qc_dir: "results/qc"
+  salmon_dir: "results/salmon"
+  figures_dir: "results/figures"
+
+reference:
+  gencode_transcripts_fa_gz: "ref/gencode/gencode.v49.transcripts.fa.gz"
+  gencode_gtf_gz: "ref/gencode/gencode.v49.annotation.gtf.gz"
+  tx2gene_tsv: "ref/gencode/tx2gene_gencode_v49.tsv"
+  viral_fa: "ref/iav_wsn33/wsn33_segments.fa"
+  combined_dir: "ref/combined"
+  combined_fa: "ref/combined/combined_transcripts.fa"
+
+salmon:
+  index_dir: "ref/combined/salmon_index"
+  libtype: "A"   # automatic
+  mode: "paired" # "paired" or "single"

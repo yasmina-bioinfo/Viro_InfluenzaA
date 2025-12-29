@@ -1,0 +1,8 @@
+A549_mock_R1
+A549_mock_R2
+A549_mock_R3
+A549_mock_R4
+A549_virus_R1
+A549_virus_R2
+A549_virus_R3
+A549_virus_R4

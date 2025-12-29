@@ -1,0 +1,9 @@
+sample_id,condition,replicate,sra_run
+A549_mock_R1,mock,1,SRR12243954
+A549_mock_R2,mock,2,SRR12243955
+A549_mock_R3,mock,3,SRR12243956
+A549_mock_R4,mock,4,SRR12243957
+A549_virus_R1,virus,1,SRR12243958
+A549_virus_R2,virus,2,SRR12243959
+A549_virus_R3,virus,3,SRR12243960
+A549_virus_R4,virus,4,SRR12243961
