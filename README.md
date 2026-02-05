@@ -8,7 +8,8 @@ The workflow integrates experimental design awareness with reproducible computat
 ---
 
 ## Biological question
-How does Influenza A virus infection alter host gene expression, and which components of the innate immune response are transcriptionally activated in infected cells compared to mock controls?
+How does Influenza A virus infection alter host gene expression, and which components of the innate immune response are transcriptionally activated in infected cells compared to mock controls? 
+Rather than focusing on global differential expression alone, the analysis prioritizes biologically interpretable antiviral pathways, with an emphasis on interferon-stimulated genes (ISGs).
 
 ---
 
@@ -19,6 +20,14 @@ How does Influenza A virus infection alter host gene expression, and which compo
   - `mock`: uninfected control
   - `virus`: Influenza A–infected samples
 - **Sequencing:** RNA-seq (paired-end)
+
+---
+
+## Dataset
+This analysis is based on publicly available bulk RNA-seq data from human samples infected with Influenza A virus, originally published in:
+
+Ashraf U. et al. (2020). *Influenza virus infection induces widespread alterations of host cell splicing*.  
+GEO accession: **GSE155241**
 
 ---
 
@@ -81,10 +90,10 @@ Gene-level differential expression was performed with **DESeq2**, using an expli
 Genes with positive log2 fold change are transcriptionally **induced by viral infection**, while negative values indicate repression.
 
 ### 7. Visualization and interpretation
-To explore and interpret host responses:
-- **PCA** was applied to variance-stabilized counts to assess global transcriptional differences,
-- **Volcano plots** were used to identify significantly induced and repressed genes,
-- A **heatmap of interferon-stimulated genes (ISGs)** was generated to highlight coordinated antiviral responses.
+TTo explore and interpret host responses:
+- A **heatmap of interferon-stimulated genes (ISGs)** was used to highlight coordinated antiviral responses across samples,
+- Volcano plots were used to contextualize the magnitude and direction of differential expression,
+- PCA was applied to variance-stabilized counts to assess global transcriptional differences between conditions.
 
 ---
 
@@ -94,15 +103,17 @@ To explore and interpret host responses:
 Principal component analysis reveals a clear separation between `mock` and `virus` samples, indicating a strong virus-driven transcriptional effect.
 
 ### Differentially expressed genes
-The analysis identifies robust induction of classical **interferon-stimulated genes (ISGs)**, including:
-- **OAS1, OAS3**
-- **STAT1**
-- **IRF7**
-- **IFIT family genes**
+The analysis identifies robust induction of classical interferon-stimulated genes (ISGs), including:
+- **CXCL10**
+- **IFIT family genes (IFIT1, IFIT2, IFIT3)**
+- **ISG15**
+- **IFI27**
 
 These genes are hallmarks of early innate immune activation and antiviral defense.
 
 Genes with higher expression in mock samples likely represent baseline cellular processes that are transcriptionally reprogrammed upon infection.
+
+Together, these results illustrate how biologically informed transcriptomic analyses can be used to extract coherent antiviral immune programs from bulk RNA-seq data.
 
 ---
 
