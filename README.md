@@ -1,4 +1,5 @@
-# Viro_InfluenzaA — Host–Virus RNA-seq Analysis
+# Viro_InfluenzaA — Host–Virus RNA-seq Analysis 
+*Project period: December 26–30, 2025*
 
 ## Overview
 This project presents an **end-to-end RNA-seq analysis** investigating the **host transcriptional response to Influenza A virus (WSN/33)** infection.
